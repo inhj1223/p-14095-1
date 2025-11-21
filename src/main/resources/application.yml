@@ -6,7 +6,6 @@ spring:
     name: sbb
   profiles:
     active: dev
-
   jpa:
     show-sql: true
     hibernate:
@@ -16,8 +15,8 @@ spring:
         format_sql: true
         highlight_sql: true
         use_sql_comments: true
-  logging:
-    level:
-      org.hibernate.orm.jdbc.bind: TRACE
-      org.hibernate.orm.jdbc.extract: TRACE
-      org.springframework.transaction.interceptor: TRACE
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.orm.jdbc.extract: TRACE
+    org.springframework.transaction.interceptor: TRACE
